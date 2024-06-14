@@ -1,13 +1,13 @@
 d = []
+m = 0
 for i in range(5):
-    d.append(input())
-leng = 0
-for k in range(len(d)):
-    if len(d[k]) > leng:
-        leng = len(d[k])
-for m in range(len(d)):
-    d[m] += " "*(leng-len(d[m]))
-for j in range(leng):
-    for n in range(len(d)):
-        if d[n][j] != " ":
-            print(d[n][j], end="")
+    a = input()
+    if len(a) > m:
+        m = len(a)
+    d.append(a)
+for q in range(5):
+    d[q] += " " * (m - len(d[q]))
+for j in range(m):
+    for k in range(5):
+        if d[k][j] != " ":
+            print(d[k][j], end="")
