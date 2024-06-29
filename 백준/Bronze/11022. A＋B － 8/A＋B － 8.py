@@ -1,4 +1,3 @@
-n = int(input())
-for i in range(1, n + 1):
+for i in range(int(input())):
     a, b = map(int, input().split())
-    print(f"Case #{i}: {a} + {b} = {a + b}")
+    print("Case #{0}: {1} + {2} = {3}" .format(i + 1, a, b, a + b))
