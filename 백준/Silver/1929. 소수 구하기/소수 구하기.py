@@ -5,13 +5,13 @@ if m < 2:
 l = [True] * (n + 1)
 l[0], l[1] = False, False
 
-j = 2
-for i in range(2, n + 1):
-    for k in range(j * 2, n + 1, j):
-        l[k] = False
-    for k in range(j + 1, n + 1):
-        if l[k]:
-            j = k
+i = 2
+while i < n:
+    for j in range(i * 2, n + 1, i):
+        l[j] = False
+    for j in range(i + 1, n + 1):
+        i += 1
+        if l[i]:
             break
 
 for i in range(m, n + 1):
