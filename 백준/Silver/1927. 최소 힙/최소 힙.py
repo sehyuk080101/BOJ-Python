@@ -25,7 +25,7 @@ for _ in range(int(sys.stdin.readline())):
     else:
         heap.append(n)
         i = len(heap) - 1
-        while i != 0 and n < heap[i // 2]:
+        while i != 1 and n < heap[i // 2]:
             heap[i] = heap[i // 2]
             i //= 2
         heap[i] = n
