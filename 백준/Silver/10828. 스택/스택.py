@@ -1,9 +1,11 @@
+import sys
+
 top = -1
 stack = [0] * 100000
-n = int(input())
+n = int(sys.stdin.readline())
 
 for i in range(n):
-    a = input().split()
+    a = sys.stdin.readline().split()
     if a[0] == "push":
         top += 1
         stack[top] = a[1]
