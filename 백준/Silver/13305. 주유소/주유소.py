@@ -1,6 +1,8 @@
-n = int(input())
-distances = list(map(int, input().split()))
-prices = list(map(int, input().split()))
+import sys
+
+n = int(sys.stdin.readline())
+distances = list(map(int, sys.stdin.readline().split()))
+prices = list(map(int, sys.stdin.readline().split()))
 li = []
 result = 0
 
